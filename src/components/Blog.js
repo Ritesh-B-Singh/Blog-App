@@ -43,7 +43,7 @@ const Blog = () => {
         const getBlogData = async () => {
             setIsLoading(true)
             try {
-                await fetch(`https://blog-app-backend-cq6tkun3i-ritesh-b-singh.vercel.app/`)
+                await fetch(`https://blog-app-backend-bay.vercel.app/`)
                     .then(response => {
                         response.json().then(blog => setBlogInfo(blog[0]));
                     });
