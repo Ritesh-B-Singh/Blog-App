@@ -39,7 +39,7 @@ const Editor = ({ blogInfo, onSuccess }) => {
 
     const handleSubmit = async () => {
         try {
-            const response = await fetch('https://blog-app-backend-bay.vercel.app/', {
+            const response = await fetch(`https://blog-app-backend-bay.vercel.app/`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json'
